@@ -1,0 +1,3 @@
+Para rodar esse aplicativo, precisa de ter instalado no computador o npm, bower e o Grunt, para rodar basta instalar os modulos com o npm e com o bower, depois disso, rodar aplicação com comando grunt serve
+
+Obs: se perguntar no momento da instalação dos modulos qual versão do angular usar, escolha a versão 1.4.9 ou 1.4.14.

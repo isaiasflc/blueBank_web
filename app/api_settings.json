@@ -1,0 +1,20 @@
+{
+  "services": {
+    "general": {
+      "application": {
+        "get_information_domain": "application/information"
+      }
+    },
+    "login": {
+      "get_authenticate": "core/client/authenticate"
+    },
+    "transfer": {
+      "post_transfer": "core/transfer/new",
+      "get_transfer": "core/transfer/collect"
+    },
+    "operation": {
+      "get_operation": "core/operation/collect",
+      "get_balance": "core/operation/balance"
+    }
+  }
+}

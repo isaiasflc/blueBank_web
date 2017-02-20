@@ -1,0 +1,22 @@
+{
+  "initial_name": "BLUEBANK",
+  "mode": "dev",
+  "mode_dev": false,
+  "user_dev": "isaias",
+  "password_dev": "senha",
+  "locale": "pt-br",
+  "api_url": {
+    "dev": {
+      "base": "https://localhost:30500/api",
+      "socket": "https://localhost:30500"
+    },
+    "homologa": {
+      "base": "https://172.0.0.8:30500/api",
+      "socket": "https://172.0.0.8:30500"
+    },
+    "production": {
+      "base": "https://dominio.seusite.com.br:30500/api",
+      "socket": "https://dominio.seusite.com.br:30500"
+    }
+  }
+}

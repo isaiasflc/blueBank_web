@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/bower_components/toastr/toastr.min.css"/>
+    <link rel="stylesheet" href="styles/css/sb-admin-2.css">
+
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
+
+
+    <script src="../bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/json3/lib/json3.min.js"></script>
+    <script src="../bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="../bower_components/angular-toggle-switch/angular-toggle-switch.min.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="../bower_components/angular-auto-validate/dist/jcs-auto-validate.min.js"></script>
+    <script src="../bower_components/angular-dynamic-locale/dist/tmhDynamicLocale.min.js"></script>
+    <script src="../bower_components/angular-i18n/angular-locale_pt-br.js"></script>
+    <script src="../bower_components/angular-input-masks/angular-input-masks-standalone.min.js"></script>
+    <script src="../bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+    <script src="../bower_components/angular-maskmoney/angular-maskmoney.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="../bower_components/angular-ui-mask/dist/mask.min.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../bower_components/angular-ui-sortable/sortable.min.js"></script>
+    <script src="../bower_components/ng-lodash/build/ng-lodash.min.js"></script>
+    <script src="/bower_components/angular-random-string/src/angular-random-string.js"></script>
+    <script src="../bower_components/toastr/toastr.min.js"></script>
+    <script src="../bower_components/ng-file-upload/FileAPI.min.js"></script>
+    <script src="../bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+    <script src="../bower_components/ng-file-upload/ng-file-upload-all.min.js"></script>
+    <script src="../bower_components/ng-file-upload/ng-file-upload-shim.min.js"></script>
+    <script src="../bower_components/js-xlsx/dist/jszip.js"></script>
+    <script src="../bower_components/js-xlsx/dist/xlsx.min.js"></script>
+    <script src="../bower_components/js-xlsx/dist/xlsx.full.min.js"></script>
+    <script src="../bower_components/js-xlsx/dist/xlsx.core.min.js"></script>
+    <script src="../bower_components/alasql/dist/alasql.min.js"></script>
+
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="styles/js/sb-admin-2.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- core -->
+    <script src="scripts/core/core.module.js"></script>
+    <script src="scripts/core/core.run.js"></script>
+    <script src="scripts/core/core.config.js"></script>
+    <script src="scripts/core/core.constants.js"></script>
+    <script src="scripts/core/core.controller.js"></script>
+    <script src="scripts/core/core.router.js"></script>
+    <script src="scripts/core/core.filter.js"></script>
+    <script src="scripts/core/tools/tools.module.js"></script>
+    <script src="scripts/core/tools/cache.service.js"></script>
+    <script src="scripts/core/tools/exception.service.js"></script>
+    <script src="scripts/core/tools/logger.service.js"></script>
+    <script src="scripts/core/request/request.module.js"></script>
+    <script src="scripts/core/request/request.service.js"></script>
+    <script src="scripts/core/crypto-js/crypto-js.js"></script>
+    <script src="scripts/core/crypto-js/sha512.js"></script>
+    <script src="scripts/core/socket.io-client/socket.io.js"></script>
+
+    <!-- Modulos -->
+    <script src="scripts/modules/login/login.module.js"></script>
+    <script src="scripts/modules/login/login.controller.js"></script>
+    <script src="scripts/modules/home/home.module.js"></script>
+    <script src="scripts/modules/home/home.controller.js"></script>
+    <script src="scripts/modules/transfer/transfer.module.js"></script>
+    <script src="scripts/modules/transfer/transfer.controller.js"></script>
+    <script src="scripts/modules/operation/operation.module.js"></script>
+    <script src="scripts/modules/operation/operation.controller.js"></script>
+
+    <!-- servive -->
+    <script src="scripts/service/TransferService.js"></script>
+    <script src="scripts/service/OperacaoService.js"></script>
+    <script src="scripts/service/ApplicationService.js"></script>
+    <script src="scripts/service/SocketService.js"></script>
+    <script src="scripts/service/LoginService.js"></script>
+
+<body>
+
+<div ng-app="BLUEBANK">
+
+    <div ui-view></div>
+
+</div>
+
+
+<script src="extra/crypto-js/crypto-js.js"></script>
+<script src="extra/crypto-js/sha512.js"></script>
+<script src="extra/socket.io-client/socket.io.js"></script>
+</body>
+
+</html>

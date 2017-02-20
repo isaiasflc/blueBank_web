@@ -1,0 +1,43 @@
+<div class="modal-content">
+  <div class="modal-header bg-danger">
+    <button type="button" class="close" ng-click="closeDialog()" aria-label="Close">
+      <em class="ion-ios-close-empty sn-link-close"></em>
+    </button>
+    <h4 class="modal-title" id="myModalLabel">Falha na Requisição</h4>
+  </div>
+  <div class="modal-body" ng-if="errorNotSent == false">
+    <h4>{{message}}</h4>
+
+    <div ng-show="transaction_id.length >  0 ">
+      <h5><span>Status:</span>
+        <span class="bold-text" style="color: red;"> {{code}} - {{status}}</span>
+      </h5>
+
+      <h5><span>URL: </span>
+        <span class="bold-text" style="color: red;">{{url}}</span>
+      </h5>
+
+      <h5>
+        <span>Codigo: </span>
+        <span class="bold-text" style="color: red;">{{transaction_id}}</span>
+      </h5>
+    </div>
+  </div>
+
+  <div class="modal-body" ng-if="errorNotSent == true">
+    <h2>{{'request.success_support_ticket' | translate}}</h2>
+
+    <div>
+      <h5><span>{{'request.support_protocol' | translate}}</span>
+        <span class="bold-text" style="color: green;"> {{ticket_support.id}} - {{ticket_support.created_at | date:'dd/MM/yyyy'}}</span>
+      </h5>
+
+      <h5>
+        <span class="bold-text" style="color: green;">{{'request.asap_notify' | translate}}</span>
+      </h5>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="closeDialog()" ng-if="!expiredToken">Ok</button>
+  </div>
+</div>
